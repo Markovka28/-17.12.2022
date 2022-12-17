@@ -1,11 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+Задача 6 /* Напишите программу, которая на вход принимает число и выдаёт, 
+является ли число чётным (делится ли оно на два без остатка).*/;
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Задача_6</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+Console.WriteLine("Введите число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
 
-</Project>
+            if (a % 2 == 1)
+            {
+                Console.WriteLine("Число " + a + " нечетное");
+            }
+            else
+            {
+                Console.WriteLine("Число " + a + "четное");
+            } 
+
