@@ -1,11 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+//Задача 2 Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Задача__2</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+Console.WriteLine("Введите первое число: ");
+            int A = int.Parse(Console.ReadLine());
 
-</Project>
+            Console.WriteLine("Введите второе число: ");
+            int B = int.Parse(Console.ReadLine());
+
+            if (A > B)
+            {
+                Console.WriteLine("Число " + A + " больше чем " + B);
+            }
+            else
+            {
+                Console.WriteLine("Число " + B + " больше чем " + A);
+            }
