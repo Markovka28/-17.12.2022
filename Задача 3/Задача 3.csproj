@@ -1,11 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+Задача 3 //Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Задача_3</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+int a = 123;
+int b = 132;
+int c = 321;
 
-</Project>
+int max = a;
+if (a>max) max = a;
+if (b>max) max = b; 
+if (c>max) max = c;   
+Console.WriteLine(max); 
+
